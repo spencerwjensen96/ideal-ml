@@ -1,0 +1,102 @@
+import { Model, User } from "../types";
+
+export const currentUser: User = {
+  id: "user-1",
+  name: "Sarah Chen",
+  email: "sarah.chen@company.com",
+  role: "ML Engineer",
+  avatar: undefined,
+};
+
+export const initialModels: Model[] = [
+  {
+    id: "model-1",
+    name: "Customer Churn Predictor",
+    version: "2.1.0",
+    description: "Predicts customer churn probability based on usage patterns and engagement metrics.",
+    framework: "PyTorch",
+    status: "production",
+    owner: "Sarah Chen",
+    createdAt: "2024-08-15T10:30:00Z",
+    updatedAt: "2024-12-01T14:22:00Z",
+    metrics: {
+      accuracy: 0.92,
+      latency: 45,
+    },
+  },
+  {
+    id: "model-2",
+    name: "Fraud Detection Model",
+    version: "3.0.1",
+    description: "Real-time fraud detection for transaction processing with ensemble methods.",
+    framework: "TensorFlow",
+    status: "production",
+    owner: "Mike Johnson",
+    createdAt: "2024-06-20T09:00:00Z",
+    updatedAt: "2024-11-28T16:45:00Z",
+    metrics: {
+      accuracy: 0.97,
+      latency: 23,
+    },
+  },
+  {
+    id: "model-3",
+    name: "Product Recommender",
+    version: "1.5.0",
+    description: "Collaborative filtering model for personalized product recommendations.",
+    framework: "PyTorch",
+    status: "staging",
+    owner: "Sarah Chen",
+    createdAt: "2024-10-01T11:15:00Z",
+    updatedAt: "2024-12-10T08:30:00Z",
+    metrics: {
+      accuracy: 0.85,
+      latency: 67,
+    },
+  },
+  {
+    id: "model-4",
+    name: "Sentiment Analyzer",
+    version: "0.9.0",
+    description: "NLP model for analyzing customer feedback sentiment across multiple channels.",
+    framework: "Hugging Face",
+    status: "development",
+    owner: "Lisa Park",
+    createdAt: "2024-11-15T13:00:00Z",
+    updatedAt: "2024-12-12T10:00:00Z",
+    metrics: {
+      accuracy: 0.78,
+      latency: 120,
+    },
+  },
+  {
+    id: "model-5",
+    name: "Demand Forecaster",
+    version: "1.2.3",
+    description: "Time series model for predicting product demand and inventory optimization.",
+    framework: "scikit-learn",
+    status: "staging",
+    owner: "Tom Wilson",
+    createdAt: "2024-09-10T08:45:00Z",
+    updatedAt: "2024-11-30T12:15:00Z",
+    metrics: {
+      accuracy: 0.88,
+      latency: 35,
+    },
+  },
+  {
+    id: "model-6",
+    name: "Legacy Image Classifier",
+    version: "1.0.0",
+    description: "Original image classification model, deprecated in favor of v2.",
+    framework: "TensorFlow",
+    status: "archived",
+    owner: "Mike Johnson",
+    createdAt: "2023-03-20T10:00:00Z",
+    updatedAt: "2024-06-15T09:00:00Z",
+    metrics: {
+      accuracy: 0.72,
+      latency: 200,
+    },
+  },
+];
